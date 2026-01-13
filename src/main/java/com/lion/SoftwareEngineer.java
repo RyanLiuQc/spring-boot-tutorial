@@ -11,7 +11,7 @@ import java.util.Objects;
 public class SoftwareEngineer {
 
     @Id //these 3 fields are now columns in the database
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // to automatically generate ids
     private Integer id; //primary key
     private String name;
     private String techStack;

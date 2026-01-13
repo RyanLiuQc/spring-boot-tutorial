@@ -20,6 +20,11 @@ public class SoftwareEngineerController {
         return softwareEngineerService.getAllSoftwareEngineers();
     }
 
+    @GetMapping("{id}")
+    public SoftwareEngineer getEngineersById(@PathVariable Integer id){
+        return softwareEngineerService.getSoftwareEngineerById(id);
+    }
+
     // define endpoint to add new software engineers to the database
     @PostMapping
     public void addNewSoftwareEngineer(
