@@ -1,9 +1,15 @@
 package com.lion;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.util.Objects;
 
+@Entity // add @Entity and @Id annotation to create a table in the database
 public class SoftwareEngineer {
-    private Integer id;
+
+    @Id //these 3 fields are now columns in the database
+    private Integer id; //primary key
     private String name;
     private String techStack;
 
